@@ -1,33 +1,33 @@
 name: "Bug report"
-description: "Сообщить о баге (Elder Origins)"
+description: "Report a bug (Elder Origins)"
 title: "[BUG] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Заполни поля — так баг проще повторить и исправить.
+        Please fill out the form below — it helps me reproduce and fix the issue faster.
 
   - type: input
     id: mod_version
     attributes:
-      label: "Версия мода (необязательно)"
-      placeholder: "например: 1.0.0"
+      label: "Mod version (optional)"
+      placeholder: "e.g. 1.0.0"
     validations:
       required: false
 
   - type: textarea
     id: what_happened
     attributes:
-      label: "Что случилось?"
-      placeholder: "Кратко опиши баг"
+      label: "What happened?"
+      placeholder: "Describe the bug briefly"
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: "Шаги для воспроизведения"
+      label: "Steps to reproduce"
       placeholder: |
         1) ...
         2) ...
@@ -38,32 +38,32 @@ body:
   - type: textarea
     id: expected
     attributes:
-      label: "Ожидалось"
-      placeholder: "Как должно работать"
+      label: "Expected behavior"
+      placeholder: "What you expected to happen"
     validations:
       required: true
 
   - type: textarea
     id: actual
     attributes:
-      label: "Получилось"
-      placeholder: "Как работает сейчас"
+      label: "Actual behavior"
+      placeholder: "What actually happened"
     validations:
       required: true
 
   - type: textarea
     id: logs
     attributes:
-      label: "Логи / Crash report (если есть)"
-      description: "Можно вставить кусок latest.log / crash-report или дать ссылку на paste."
-      placeholder: "Вставь лог или ссылку"
+      label: "Logs / Crash report (if any)"
+      description: "Paste relevant parts of latest.log / crash-report, or provide a paste link."
+      placeholder: "Paste logs or a link here"
     validations:
       required: false
 
   - type: textarea
     id: extra
     attributes:
-      label: "Дополнительно (необязательно)"
-      placeholder: "Скрины, видео, любые детали которые могут помочь"
+      label: "Additional info (optional)"
+      placeholder: "Screenshots, video, or any extra details that might help"
     validations:
       required: false
