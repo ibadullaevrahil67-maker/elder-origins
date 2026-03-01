@@ -11,7 +11,7 @@ body:
   - type: input
     id: mod_version
     attributes:
-      label: "Версия мода"
+      label: "Версия мода (необязательно)"
       placeholder: "например: 1.0.0"
     validations:
       required: false
@@ -64,6 +64,6 @@ body:
     id: extra
     attributes:
       label: "Дополнительно (необязательно)"
-      placeholder: "Скрины, видео, seed мира, список модов, всё что может помочь"
+      placeholder: "Скрины, видео, любые детали которые могут помочь"
     validations:
       required: false
