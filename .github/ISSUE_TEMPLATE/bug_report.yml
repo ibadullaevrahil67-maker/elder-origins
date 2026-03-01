@@ -3,27 +3,16 @@ description: "Сообщить о баге (Elder Origins)"
 title: "[BUG] "
 labels: ["bug"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Заполни поля — так баг проще повторить и исправить.
+
   - type: input
     id: mod_version
     attributes:
       label: "Версия мода"
       placeholder: "например: 1.0.0"
-    validations:
-      required: true
-
-  - type: input
-    id: minecraft_version
-    attributes:
-      label: "Версия Minecraft"
-      placeholder: "например: 1.20.1"
-    validations:
-      required: true
-
-  - type: input
-    id: loader_version
-    attributes:
-      label: "Fabric Loader"
-      placeholder: "например: 0.15.x"
     validations:
       required: false
 
@@ -55,9 +44,26 @@ body:
       required: true
 
   - type: textarea
+    id: actual
+    attributes:
+      label: "Получилось"
+      placeholder: "Как работает сейчас"
+    validations:
+      required: true
+
+  - type: textarea
     id: logs
     attributes:
-      label: "Логи / Crash report"
-      placeholder: "Вставь часть latest.log или crash-report (или ссылку)"
+      label: "Логи / Crash report (если есть)"
+      description: "Можно вставить кусок latest.log / crash-report или дать ссылку на paste."
+      placeholder: "Вставь лог или ссылку"
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: "Дополнительно (необязательно)"
+      placeholder: "Скрины, видео, seed мира, список модов, всё что может помочь"
     validations:
       required: false
